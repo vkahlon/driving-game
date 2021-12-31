@@ -25,3 +25,7 @@ body {
   transform: rotate(0turn);
   transition-duration: 0.5s;
 }
+
+.location {
+  position: absolute;
+}
