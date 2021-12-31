@@ -1,11 +1,8 @@
 var timeID = null;
-var theDistance = 1;
+var theXDistance = 0;
 var imageMover = document.querySelector('img');
 var moveMent = document.querySelector('html');
 moveMent.addEventListener('keydown', moveCar);
-
-var moveCarX = document.querySelector('style.x');
-// var moveCarY = document.querySelector('style.y');
 
 function moveCar(event) {
   var control = event.key;
@@ -28,8 +25,7 @@ function justDriveForward(control) {
 }
 
 function gottaDriveForward() {
-  theDistance += 20;
-  moveCarX.textContent = '.x {left: ' + theDistance + 'px;}';
+  theXDistance += 30;
+  imageMover.setAttribute('style', 'left: ' + theXDistance + 'px');
   clearInterval(timeID);
-  return theDistance;
 }
