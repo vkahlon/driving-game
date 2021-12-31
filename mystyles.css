@@ -5,3 +5,23 @@ body {
 .race-car {
   width: 15%;
 }
+
+.north {
+  transform: rotate(-0.25turn);
+  transition-duration: 0.5s;
+}
+
+.south {
+  transform: rotate(0.25turn);
+  transition-duration: 0.5s;
+}
+
+.west {
+  transform: rotate(0.5turn);
+  transition-duration: 0.5s;
+}
+
+.east {
+  transform: rotate(0turn);
+  transition-duration: 0.5s;
+}
